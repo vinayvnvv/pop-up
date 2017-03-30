@@ -1,0 +1,92 @@
+.pop-up {
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   top:0;
+   left: 0;
+   z-index: 777;
+   
+}
+.x-y-center {
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
+	display: flex;
+}
+.pop-up .pop-up-dim {
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   top:0;
+   left: 0;
+   z-index: 888;
+   background-color: #000;
+   opacity: 0.6;
+}
+.pop-up .pop-up-body {
+	position: relative;
+	background-color: #fff;
+	z-index: 999;
+	min-width: 300px;
+	padding: 19px;
+	border-radius: 10px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+.pop-up .pop-up-body .text {
+	min-height: 100px;
+	flex-grow: 1;
+}
+.pop-up .pop-up-body .actions {
+	min-height: 50px;
+	flex-basis: 50px;
+}
+
+.pop-up .pop-up-body .mark-icon {
+    background-color: transparent;
+    background-image: url(ic_success_tickmark.png);
+    width: 40px;
+    height: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    border-radius: 40px;
+    position: absolute;
+    left: 44%;
+    top: -17px;
+    background-size: 40px 40px;
+}
+
+
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  animation-duration: 0.3s;
+}
+
